@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { FcCursor, FcDocument } from "react-icons/fc";
+import { AiFillCamera, AiFillEnvironment } from "react-icons/ai";
+import { RxInstagramLogo, RxLockOpen2 } from "react-icons/rx";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="icon-container">
+        <FcCursor className="icon" />
+        <FcDocument className="icon" />
+        <AiFillCamera className="icon" />
+        <AiFillEnvironment className="icon" />
+        <RxInstagramLogo className='icon'/>
+        <RxLockOpen2 className='icon'/>
+
+      </div>
     </div>
   );
 }
